@@ -13,9 +13,8 @@ permissions:
 
 jobs:
   upstreamfix:
-    # Workflow from ivanDev237/upstreamfix PR #11 (App dispatch support, not yet on main);
-    # the migration tool itself is pinned to a reviewed commit of main.
-    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@7c64a4e05acd154bf990855ede6c1179e80dfe6b
+    # Workflow and migration tool pinned to the same reviewed commit of ivanDev237/upstreamfix main.
+    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@de19067c03f6af2529bdaf002bf706398075cdff
     with:
-      upstreamfix_sha: cff770542591226635d1d8a7e9c1766209d30c78
+      upstreamfix_sha: de19067c03f6af2529bdaf002bf706398075cdff
       ci_workflow: ci.yml
