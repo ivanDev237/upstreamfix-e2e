@@ -1,3 +1,5 @@
 frequency: weekly
+ignore:
+  - firebase-admin@14
 verify:
   - npm run test
