@@ -3,7 +3,7 @@ name: UpstreamFix API migrations
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [upstreamfix.migrate]
+    types: [upstreamfix.migrate, bot-pr-followup]
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ permissions:
 jobs:
   upstreamfix:
     # Workflow and migration tool pinned to UpstreamFix v0.4.0 (main eca1cf5).
-    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@eca1cf55717a32bb0dc0374229c9eb62354845f7
+    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@56ce4e953dbb2623b24eb781ea536cabe191f67c
     with:
-      upstreamfix_sha: eca1cf55717a32bb0dc0374229c9eb62354845f7
+      upstreamfix_sha: 56ce4e953dbb2623b24eb781ea536cabe191f67c
       ci_workflow: ci.yml
