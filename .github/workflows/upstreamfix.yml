@@ -14,7 +14,7 @@ permissions:
 jobs:
   upstreamfix:
     # Workflow and migration tool pinned to UpstreamFix v0.4.0 (main eca1cf5).
-    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@56ce4e953dbb2623b24eb781ea536cabe191f67c
+    uses: ivanDev237/upstreamfix/.github/workflows/client-migrations.yml@0d75ae7c3841a415b1217cada831d96fa3ca43ae
     with:
-      upstreamfix_sha: 56ce4e953dbb2623b24eb781ea536cabe191f67c
+      upstreamfix_sha: 0d75ae7c3841a415b1217cada831d96fa3ca43ae
       ci_workflow: ci.yml
