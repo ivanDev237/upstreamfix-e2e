@@ -1,7 +1,7 @@
-const admin = require('firebase-admin');
+const { getAuth } = require('firebase-admin/auth');
 
 async function getUser(uid) {
-  return admin.auth().getUser(uid);
+  return getAuth().getUser(uid);
 }
 
 module.exports = { getUser };
